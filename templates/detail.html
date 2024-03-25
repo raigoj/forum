@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href=/templates/style.css>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <ul class="nav-list">
+                    <span class="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                    <li class="nav-item">
+                        <a href="/templates/mainpage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/templates/posts.html">Posts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/templates/detail.html">Detail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/templates/register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/templates/login.html">Login</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+            <div class="brand">Gorum</div>
+        </div>
+        <!--Search Box-->
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="everything">Everything</option>
+                    <option value="titles">Titles</option>
+                    <option value="descriptions">Descriptions</option>
+                </select>
+                <input type="text" name="q" id="" placeholder="search...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!--Navigation-->
+        <div class="navigate">
+            <span><a href="#">My Forum - Forums</a> >> <a href="#">Random </a> >> <a href="#">Random Post</a></span>
+        </div>
+
+        <div class="topic-container">
+            <div class="head">
+                <div class="authors">Author</div>
+                <div class="content">Topic: post's title (Read 123 Times)</div>
+            </div>
+
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="#">Username</a></div>
+                    <div>Role</div>
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/13/14/full-moon-1869760_960_720.jpg" alt="">
+                    <div>Posts: <u>42</u></div>
+                    <div>Points: <u>13</u></div>
+                </div>
+
+                <div class="content">
+                    Just a random post in random forum.
+                    <br>To see how it looks like.
+                    <br><br>
+                    Nothing else...
+                    <br><br>
+                    <hr>
+                    Regards Username
+                    <div class="comment">
+                        <button onclick="showComment()">Comment</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!--Comment input-->
+        <div class="comment-area hide" id="comment-area">
+            <textarea name="comment" id="" placeholder="comment here ..."></textarea>
+            <input type="submit" name="" id="" value="submit">
+        </div>
+
+        <!--Show Comments-->
+        <div class="comments-container">
+            <div class="head">
+                <div class="authors">Author</div>
+                <div class="content">Comments</div>
+            </div>
+
+            <div class="body">
+                <div class="authors">
+                    <div class="AnotherUser"><a href="#">Username</a></div>
+                    <div>Role</div>
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/13/14/full-moon-1869760_960_720.jpg" alt="">
+                    <div>Posts: <u>42</u></div>
+                    <div>Points: <u>13</u></div>
+                </div>
+
+                <div class="content">
+                    Just a random comment in random forum.
+                    <br>To see how it looks like.
+                    <br><br>
+                    Nothing else...
+                    <br><br>
+                    <hr>
+                    Regards Username
+                    <div class="comment">
+                        <button onclick="showReply()">Reply</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!--Reply input-->
+        <div class="comment-area hide" id="reply-area">
+            <textarea name="comment" id="" placeholder="reply here ..."></textarea>
+            <input type="submit" name="" id="" value="submit">
+        </div>
+
+        
+    </div>
+
+    <footer>
+        <span>Powered by Go | kood/Jõhvi</span>
+    </footer>
+
+    <script src="/templates/main.js"></script>
+</body>
+</html>

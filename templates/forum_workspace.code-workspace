@@ -1,0 +1,31 @@
+{
+	"folders": [
+		{
+			"name": "forum",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"sqltools.connections": [
+			{
+				"previewLimit": 50,
+				"driver": "SQLite",
+				"name": "1st",
+				"database": "forum.db"
+			},
+			{
+				"previewLimit": 50,
+				"driver": "SQLite",
+				"name": "2nd",
+				"database": "/home/raigo/kood/catharin/authentification/users.db"
+			},
+			{
+				"previewLimit": 50,
+				"driver": "SQLite",
+				"name": "123",
+				"database": "${workspaceFolder:forum}/users.db"
+			}
+		],
+		"sqltools.useNodeRuntime": true
+	}
+}
